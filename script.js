@@ -11,7 +11,7 @@ window.addEventListener("load", function() {
     let autoSlide;
 
     function siguiente() {
-        if(index != totalSlides -1){
+        if(index != totalSlides - 1){
             index +=1 
         }else{
             index = 0
