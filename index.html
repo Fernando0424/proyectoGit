@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Proyecto Carrusel</title>
     <link rel="stylesheet" href="estilos.css">
     <script src="script.js"></script>
@@ -10,6 +11,153 @@
 <body>
     <header>
         <h1> Proyecto Carrusel </h1>
+=======
+    <title>FrontEnd</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: lightgrey;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: blueviolet;
+            padding: .1em;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px black;
+        }
+
+        section {
+            padding: .1em;
+        }
+
+        #slider {
+            position: relative;
+            width: 55%;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #slides {
+            height: 30em;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #slides a {
+            display: block;
+            flex-shrink: 0;
+            width: 100%;
+        }
+
+        #slides img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        #ant, #sig {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            visibility: hidden;
+            border-radius: 30%;
+        }
+
+        #ant {
+            left: 15px;
+        }
+
+        #sig {
+            right: 15px;
+        }
+
+        #slider:hover #ant, 
+        #slider:hover #sig {
+            visibility: visible;
+        }
+
+        footer {
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagen{
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(inicializar, 0)
+
+            function inicializar(){
+                document.getElementById("slides").innerHTML = document.getElementById("img0").innerHTML
+            }
+
+            let slides = document.getElementById("totalImagenes");
+            let totalSlides = slides.children.length;
+            let index = 0;
+            let autoSlide;
+
+            function siguiente() {
+                if(index != totalSlides -1){
+                    index +=1 
+                }else{
+                    index = 0
+                }
+                posicion();
+            }
+
+            function anterior() {
+                index = (index - 1 + totalSlides) % totalSlides;
+                posicion();
+            }
+
+            function posicion() {
+                for (let i = 0; i < totalSlides; i++) {
+                    if(index == i){
+                        let id = "img"+i
+                        document.getElementById("slides").innerHTML = document.getElementById(id).innerHTML
+                    }
+                }
+
+                resetTiempo();
+            }
+
+            function resetTiempo() {
+                clearInterval(autoSlide);
+                autoSlide = setInterval(siguiente, 5000);
+            }
+
+            resetTiempo();
+
+            document.getElementById("sig").addEventListener("click", siguiente);
+            document.getElementById("ant").addEventListener("click", anterior);
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1> Proyecto Git</h1>
+>>>>>>> 7b10ccb6c9d6ac51b74c8d719a99f4071b8cecf6
     </header>
     <section>
         <div id="totalImagenes" hidden>
@@ -26,9 +174,13 @@
         </div>
     </section>
     <footer>
+<<<<<<< HEAD
         <address> 
             Instituto Tecnologico de Chihuahua II - Programación WEB FrontEnd
         </address>
+=======
+        <address> Equipo 1, Aleksa, Georgina, Fernando, Omar, Ivan :D</address>
+>>>>>>> 7b10ccb6c9d6ac51b74c8d719a99f4071b8cecf6
     </footer>
 </body>
 </html>
