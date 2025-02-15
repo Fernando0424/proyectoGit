@@ -39,3 +39,10 @@ Commit "Mejoras en estilos CSS":
      * Sombras sutiles para profundidad
 
 Proyecto para la tarea Git de la materia FrontEnd, del equipo 1 donde se ve la pagina con html, css y js.
+
+Equipo
+Fernando Bustillos
+Aleksa Carrillo
+Georgina Chavez
+Omar Mendoza 
+Ivan Rodriguez
