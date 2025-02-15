@@ -3,7 +3,7 @@ Proyecto para la tarea Git de la materia FrontEnd
 
 Los primeros commits que hicimos fueron para configurar el repositorio de modo que los integrantes podamos hacer push remotos
 
-Commit "Reestructuración del proyecto": Inicialmente el proyecto estaba completamente en un solo archivo html, con este commit se reestructuro para un mejor acomodo, separando el css y el js del html.
+Commit "Reestructuración del proyecto": Este es el commit inicial del proyecto, reutilizamos una base que ya teniamos, esta estaba completamente en un solo archivo html, con este commit se reestructuro para un mejor acomodo, separando el css y el js del html.
 
 Commit "Mejoras en estilos CSS":
 
@@ -37,6 +37,18 @@ Commit "Mejoras en estilos CSS":
      * Gris oscuro como color primario
      * Fondo claro para mejor contraste
      * Sombras sutiles para profundidad
+
+Commit "Se agregan imagenes de carros":
+
+    En este commit se añadieron 2 imagenes de carros diferentes, ya que el proyecto tenia imagenes repetidas
+
+Commit "Se elimina imagen duplicada":
+
+    Se agrego una imagen que no se estaba utilizando y con este commit fue eliminada
+
+Commit "Se agrega la funcionalidad del carrusel mediante js":
+
+    En este commit se agregó el código JS para que el proyecto funcionara correctamente
 
 Proyecto para la tarea Git de la materia FrontEnd, del equipo 1 donde se ve la pagina con html, css y js, asi como la organizacion del proyecto.
 
