@@ -38,7 +38,7 @@ Commit "Mejoras en estilos CSS":
      * Fondo claro para mejor contraste
      * Sombras sutiles para profundidad
 
-Proyecto para la tarea Git de la materia FrontEnd, del equipo 1 donde se ve la pagina con html, css y js.
+Proyecto para la tarea Git de la materia FrontEnd, del equipo 1 donde se ve la pagina con html, css y js, asi como la organizacion del proyecto.
 
 Equipo
 Fernando Bustillos
